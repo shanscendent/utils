@@ -1,0 +1,11 @@
+services:
+  ubuntu-test:
+    init: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-test
+    hostname: ubuntu-test
+    command: sleep infinity
+    tty: true
+    stdin_open: true

@@ -1,0 +1,8 @@
+# Start the container
+docker compose up -d
+# Start and forcibly recreate the container (destroys the currently running container, if any)
+docker compose up -d --force-recreate
+# Connect to the container
+docker exec -it ubuntu-test bash
+# Destroy the container
+docker compose down
